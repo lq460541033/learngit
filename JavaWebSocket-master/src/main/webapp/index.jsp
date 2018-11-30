@@ -18,9 +18,10 @@
 
 <script type="text/javascript">
     var websocket = null;
+		var host = location.host;
     //判断当前浏览器是否支持WebSocket
     if ('WebSocket' in window) {
-        websocket = new WebSocket("ws://localhost:8083/JavaWebSocket/websocket");
+        websocket = new WebSocket("ws://host/JavaWebSocket/websocket");
     }
     else {
         alert('当前浏览器 Not support websocket')
