@@ -77,19 +77,18 @@ public class EurekaHiApplication {
 	
 	@RequestMapping("/get")
 	public String presignedGetObject(String Filename ) {
-		  MinioClient minioClient;
+			  MinioClient minioClient;
 		try {
 			minioClient = new MinioClient(endpoint, accessKey, secretKey);
 			 // 获取文件的访问路径
 	        String presignedGetObject = minioClient.presignedGetObject(bucketName, Filename);
 	        return presignedGetObject;
-		} catch (InvalidEndpointException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			
 		} catch(Exception e) {
 			  System.out.println("Error occurred: " + e);
+			  e.printStackTrace();
+			  return "Error occurred: 报错 ";
 		}
-		return null;
 	}
 	
 	
