@@ -23,14 +23,14 @@ import io.minio.errors.InvalidEndpointException;
 @SpringBootApplication
 public class EurekaHiApplication {
 	
-	//服务器地址
-	  private static String endpoint = "http://192.168.222.1:9000/";
+	//服务器地址http://127.0.0.1:9000
+	  private static String endpoint = "http://127.0.0.1:9000/";
 
 	  // 用户名
-    private static String accessKey = "stronger0724";
+    private static String accessKey = "root";
 
     // 密码
-    private static String secretKey = "lq123456";
+    private static String secretKey = "root1234";
 
     // 创建的文件名
     private static String bucketName = "files4";
