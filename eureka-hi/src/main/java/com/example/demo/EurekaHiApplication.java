@@ -28,7 +28,7 @@ import io.reactivex.netty.protocol.http.server.HttpServerRequest;
 public class EurekaHiApplication {
 	
 	//服务器地址
-	  private static String endpoint = "http://127.0.0.1:9000/";
+	  private static String endpoint = "http://192.168.92.1:9000/";
 
 	  // 用户名
     private static String accessKey = "stronger0724";
