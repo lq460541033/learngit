@@ -49,7 +49,10 @@ public class EurekaHiApplication {
 	@RequestMapping("uploadImgAlbums")
 	public void albumUploadImgs(@RequestParam(value = "files", required = true) MultipartFile[] multipartFiles,HttpServletRequest req, HttpServletResponse response) throws IOException{
 	   	try {
+			 //  MinioClient minioClient = new MinioClient(endpoint, accessKey, secretKey);
+			   
 			   MinioClient minioClient = new MinioClient(endpoint, accessKey, secretKey);
+
 	           
 	           // Check if the bucket already exists.（检查桶是否已经存在。）
 	           boolean isExist = minioClient.bucketExists(bucketName);
