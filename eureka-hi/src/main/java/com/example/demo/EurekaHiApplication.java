@@ -24,7 +24,7 @@ import io.minio.errors.InvalidEndpointException;
 public class EurekaHiApplication {
 	
 	//服务器地址http://127.0.0.1:9000
-	  private static String endpoint = "http://127.0.0.1:9000/";
+	  private static String endpoint = "http://192.168.92.128:9000/";
 
 	  // 用户名
     private static String accessKey = "root";
