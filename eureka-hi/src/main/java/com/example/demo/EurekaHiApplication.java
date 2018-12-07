@@ -29,13 +29,13 @@ public class EurekaHiApplication {
 	}
 	
 	//服务器地址
-	@Value("${minio.endpoint:http://192.168.92.1:9000/}")
+	@Value("${minio.endpoint}")
 	  private String endpoint;
 	  // 用户名
-	 @Value("${minio.accessKey:root}")
+	 @Value("${minio.accessKey}")
     private  String accessKey;
     // 密码
-	@Value("${minio.secretKey:root1234}")
+	@Value("${minio.secretKey}")
     private  String secretKey;
     // 密码
 	@Value("${minio.bucketName}")
