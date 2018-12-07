@@ -10,7 +10,7 @@ spring:
 
     
 minio:
-  endpoint: http://192.168.92.1:9000/
+  endpoint: http://127.0.0.1:9000/
   accessKey: root
   secretKey: root1234
-  bucketName: bucketName
+  bucketName: imge-0001
