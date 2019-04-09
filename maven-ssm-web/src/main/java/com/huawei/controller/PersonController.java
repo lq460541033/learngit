@@ -13,17 +13,9 @@ import com.huawei.service.IPersonService;
 @Controller
 @RequestMapping("/personController")
 public class PersonController {
-	
-private IPersonService personService;
-    
-    public IPersonService getPersonService() {
-        return personService;
-    }
+	@Autowired
+	private IPersonService personService;
 
-    @Autowired
-    public void setPersonService(IPersonService personService) {
-        this.personService = personService;
-    }
 
     @RequestMapping("/showPerson")
     public String showPersons(Model model){
